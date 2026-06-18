@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Programmable Documentation</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script>document.documentElement.classList.add('force-light');</script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="gradient-background" aria-hidden="true">
+    <div class="gradient-sphere sphere-1"></div>
+    <div class="gradient-sphere sphere-2"></div>
+    <div class="gradient-sphere sphere-3"></div>
+    <div class="glow"></div>
+    <div class="grid-overlay"></div>
+    <div class="noise-overlay"></div>
+  </div>
+  <div id="particles-container" class="particles-container"></div>
+  <div class="content-wrap">
+  <header>
+    <div class="nav-inner">
+      <a class="brand" href="index.html">
+        <img src="logo.svg" class="logo-mark" alt="Programmable logo" />
+        <div class="brand-name"><strong>Programmable</strong></div>
+      </a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="index.html#features">Game Info</a>
+        <a href="docs.html">Documentation</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="section-header">
+        <p class="section-title">Documentation made easy</p>
+        <p class="section-description">Each machine function is shown as a scratch-style block with clear color coding. This page makes it fast to learn what every variable and action does.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="block-list">
+        <article class="block-card block-drill interactive-hover">
+          <div class="block-card-header">Drill</div>
+          <div class="block-card-body">
+            <div class="block-item"><strong>Variable bool canMine</strong><span>Whether the drill can mine.</span></div>
+            <div class="block-item"><strong>Variable int cooldown</strong><span>Seconds left before the drill can mine again.</span></div>
+            <div class="block-item"><strong>Function mine()</strong><span>Collects a random ore or gem. After use, it cannot run again until <span class="slot">10</span> seconds have passed.</span></div>
+          </div>
+        </article>
+
+        <article class="block-card block-conveyor interactive-hover">
+          <div class="block-card-header">Conveyor</div>
+          <div class="block-card-body">
+            <div class="block-item"><strong>Variable bool isOccupied</strong><span>True when an item is on the conveyor.</span></div>
+            <div class="block-item"><strong>Function setSpeed<span class="slot">speed</span></strong><span>Turns the conveyor on or off and controls movement speed.</span></div>
+          </div>
+        </article>
+
+        
+        <article class="block-card block-furnace interactive-hover">
+          <div class="block-card-header">Furnace</div>
+          <div class="block-card-body">
+            <div class="block-item"><strong>Variable int itemCount</strong><span>How many minerals or gems are currently stored.</span></div>
+            <div class="block-item"><strong>Variable bool isFull</strong><span>True when the furnace cannot accept more items.</span></div>
+            <div class="block-item"><strong>Function melt()</strong><span>Melts minerals or gems into a bucket of molten material.</span></div>
+          </div>
+        </article>
+
+        <article class="block-card block-transformer interactive-hover">
+          <div class="block-card-header">Transformer</div>
+          <div class="block-card-body">
+            <div class="block-item"><strong>Variable float literCount</strong><span>The number of molten mineral liters available.</span></div>
+            <div class="block-item"><strong>Variable bool isFull</strong><span>True when the transformer cannot accept more molten mineral.</span></div>
+            <div class="block-item"><strong>Function transform<span class="slot">type</span></strong><span>Converts enough molten mineral into a new item type: Ingot, Weapon, or Tool.</span></div>
+          </div>
+        </article>
+
+        <article class="block-card block-jewelry interactive-hover">
+          <div class="block-card-header">Jewelry Machine</div>
+          <div class="block-card-body">
+            <div class="block-item"><strong>Variable float literCount</strong><span>The number of molten gem liters available.</span></div>
+            <div class="block-item"><strong>Variable bool isFull</strong><span>True when the machine cannot accept more molten gem.</span></div>
+            <div class="block-item"><strong>Function transform<span class="slot">type</span></strong><span>Converts enough molten gem into Necklace, Bracelet, or Ring.</span></div>
+          </div>
+        </article>
+
+        <article class="block-card block-truck interactive-hover">
+          <div class="block-card-header">Dumping Truck</div>
+          <div class="block-card-body">
+            <div class="block-item"><strong>Variable bool isFull</strong><span>True when the truck is full of items.</span></div>
+            <div class="block-item"><strong>Function sell()</strong><span>Sells every item in the truck and starts a <span class="slot">5</span> second cooldown before it can sell again.</span></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-header">
+        <p class="section-title">How the blocks work</p>
+        <p class="section-description">Think of each function as a Scratch-style block. The colors make it easy to scan the page and understand each machine at a glance.</p>
+      </div>
+      <div class="callout">
+        <p><strong>Tip:</strong> Use the drill block to mine resources, then move items through conveyors. Melt them in the furnace, transform them into tools or jewelry, then sell with the Dumping truck.</p>
+      </div>
+    </section>
+  </main>
+
+  </div>
+</body>
+</html>

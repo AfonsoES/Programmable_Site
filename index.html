@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Programmable</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script>document.documentElement.classList.add('force-light');</script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="gradient-background" aria-hidden="true">
+    <div class="gradient-sphere sphere-1"></div>
+    <div class="gradient-sphere sphere-2"></div>
+    <div class="gradient-sphere sphere-3"></div>
+    <div class="glow"></div>
+    <div class="grid-overlay"></div>
+    <div class="noise-overlay"></div>
+  </div>
+  <div class="content-wrap">
+  <header>
+    <div class="nav-inner">
+      <a class="brand" href="index.html">
+        <img src="logo.svg" class="logo-mark" alt="Programmable logo" />
+        <div class="brand-name"><strong>Programmable</strong></div>
+      </a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="index.html#features">Game Info</a>
+        <a href="docs.html">Documentation</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section hero" id="home">
+      <div>
+        <p style="margin-bottom:12px;font-weight:700;color:var(--orange);text-transform:uppercase;letter-spacing:0.16em;">New coding adventure</p>
+        <h1>Programmable</h1>
+        <p class="section-description text-panel">Play a clean, visual game that teaches coding through machine design and production logic. Perfect for teens and school clubs who want a polished learning experience.</p>
+        <div class="btn-row">
+          <a class="btn btn-primary" href="#download">Download</a>
+          <a class="btn btn-secondary" href="docs.html">View documentation</a>
+        </div>
+      </div>
+
+      <!-- removed hero highlight panel as requested -->
+      
+    
+    </section>
+
+    <section class="section" id="features">
+      <div class="section-header">
+        <p class="section-title">Designed for learning.</p>
+        <p><br /></p>
+      </div>
+
+      <div class="grid-3">
+        <article class="card interactive-hover">
+          <h3>Simple blocks</h3>
+          <p>Use block instructions to operate machines, pick up items, move resources, and transform materials. Code becomes a game mechanic.</p>
+        </article>
+        <article class="card interactive-hover">
+          <h3>Build real factorys</h3>
+          <p>Learn how variables work and how functions do actions by creating your own factory.</p>
+        </article>
+        <article class="card interactive-hover">
+          <h3>Clear mission rewards</h3>
+          <p>Collect ore, melt it, craft tools or jewelry, then sell cargo. Every step shows how programming controls a production system and earns in-game value.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="blocks">
+      <div class="section-header">
+        <p class="section-title">Scratch-style blocks</p>
+        <p class="section-description">Sample: a forever loop that checks <code>canMine</code> and calls <code>mine()</code>.</p>
+      </div>
+
+      <div class="scratch-demo">
+        <div class="scratch-image">
+          <img src="codeSample.png" class="code-sample-img" alt="code sample" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="download">
+
+      <div class="bottom-grid">
+        <div class="download-card interactive-hover">
+          <h2>Download</h2>
+          <p class="text-panel">Optimized for classroom use and individual play. Start learning and programing with programmable in one click.</p>
+          <a class="btn btn-primary" href="#" style="display:inline-block;margin-top:22px;">Start playing now</a>
+          
+        </div>
+      </div>
+    </section>
+  </main>
+  </div>
+</body>
+</html>
