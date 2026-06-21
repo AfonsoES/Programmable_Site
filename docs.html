@@ -55,6 +55,7 @@
         <article class="block-card block-conveyor interactive-hover">
           <div class="block-card-header">Conveyor</div>
           <div class="block-card-body">
+            <div class="block-item"><strong>Variable string type</strong><span>Show what its on the conveyor. Ore, Gem, Ore Bucket, Gem Bucket, Ingot, Weapon, Tool, Necklace, Bracelet, or Ring.</span></div>
             <div class="block-item"><strong>Variable bool isOccupied</strong><span>True when an item is on the conveyor.</span></div>
             <div class="block-item"><strong>Function setSpeed<span class="slot">speed</span></strong><span>Turns the conveyor on or off and controls movement speed.</span></div>
           </div>
@@ -64,7 +65,6 @@
         <article class="block-card block-furnace interactive-hover">
           <div class="block-card-header">Furnace</div>
           <div class="block-card-body">
-            <div class="block-item"><strong>Variable int itemCount</strong><span>How many minerals or gems are currently stored.</span></div>
             <div class="block-item"><strong>Variable bool isFull</strong><span>True when the furnace cannot accept more items.</span></div>
             <div class="block-item"><strong>Function melt()</strong><span>Melts minerals or gems into a bucket of molten material.</span></div>
           </div>
@@ -73,7 +73,6 @@
         <article class="block-card block-transformer interactive-hover">
           <div class="block-card-header">Transformer</div>
           <div class="block-card-body">
-            <div class="block-item"><strong>Variable float literCount</strong><span>The number of molten mineral liters available.</span></div>
             <div class="block-item"><strong>Variable bool isFull</strong><span>True when the transformer cannot accept more molten mineral.</span></div>
             <div class="block-item"><strong>Function transform<span class="slot">type</span></strong><span>Converts enough molten mineral into a new item type: Ingot, Weapon, or Tool.</span></div>
           </div>
@@ -82,7 +81,6 @@
         <article class="block-card block-jewelry interactive-hover">
           <div class="block-card-header">Jewelry Machine</div>
           <div class="block-card-body">
-            <div class="block-item"><strong>Variable float literCount</strong><span>The number of molten gem liters available.</span></div>
             <div class="block-item"><strong>Variable bool isFull</strong><span>True when the machine cannot accept more molten gem.</span></div>
             <div class="block-item"><strong>Function transform<span class="slot">type</span></strong><span>Converts enough molten gem into Necklace, Bracelet, or Ring.</span></div>
           </div>
